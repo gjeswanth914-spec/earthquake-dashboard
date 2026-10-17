@@ -40,7 +40,7 @@ st.sidebar.header("Filters")
 days = st.sidebar.selectbox(
     "Select time period",
     [7, 14, 30],
-    index=0
+    index=0,
     format_func=lambda x: f"Last {x} days"
 )
 
