@@ -4,6 +4,7 @@ import requests
 import pandas as pd
 import plotly.express as px
 import pydeck as pdk
+from streamlit_pdf_viewer import pdf_viewer
 
 st.set_page_config(
     page_title="Earthquake Dashboard",
@@ -240,17 +241,11 @@ try:
 
     
     with st.expander("📄 View Project Documentation"):
-        st.markdown(
-            f"""
-            <iframe
-                src="data:application/pdf;base64,{pdf_base64}"
-                width="100%"
-                height="600"
-                style="border: none; border-radius: 8px;">
-            </iframe>
-            """,
-            unsafe_allow_html=True
-        )
+    pdf_viewer(
+        input=pdf_data,
+        width="100%",
+        height=700
+    )
 
 
 except FileNotFoundError:
