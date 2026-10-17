@@ -41,6 +41,7 @@ days = st.sidebar.selectbox(
     "Select time period",
     [7, 14, 30],
     index=0
+    format_func=lambda x: f"Last {x} days"
 )
 
 min_magnitude = st.sidebar.slider(
