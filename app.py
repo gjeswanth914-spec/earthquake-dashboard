@@ -224,6 +224,7 @@ st.write(
     "internship assignment or download a copy."
 )
 
+
 try:
     with open("earthquake_documentation.pdf", "rb") as file:
         pdf_data = file.read()
@@ -235,21 +236,15 @@ try:
         mime="application/pdf"
     )
 
-    import base64
-
-    pdf_base64 = base64.b64encode(pdf_data).decode("utf-8")
-
-    
     with st.expander("📄 View Project Documentation"):
-    pdf_viewer(
-        input=pdf_data,
-        width="100%",
-        height=700
-    )
-
+        pdf_viewer(
+            input=pdf_data,
+            width="100%",
+            height=700
+        )
 
 except FileNotFoundError:
     st.warning(
         "Documentation PDF not found. "
-        "Place earthquake_documentation.pdf beside app.py."
+        "Please place earthquake_documentation.pdf beside app.py."
     )
