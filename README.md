@@ -1,58 +1,53 @@
 
 # 🌍 Global Earthquake Dashboard
 
-A Python-based interactive dashboard that visualizes global earthquake activity using real-time data from the USGS Earthquake API.
+**Live Dashboard:** [Open the Earthquake Dashboard]
+https://global-earthquake-analytics-jeswanth.streamlit.app/
+
+An interactive dashboard that visualizes global earthquake activity using real data from the USGS Earthquake API.
 
 ## 📌 Project Overview
 
-This project was developed as part of the Capillary Technologies internship assignment. It helps users explore earthquake events through interactive maps, charts, filters, and downloadable data.
+Developed for the Capillary Technologies internship assignment, this dashboard helps users explore earthquake events through interactive maps, charts, filters, and downloadable data.
 
 ## ✨ Features
 
-- Summary cards showing earthquake statistics
-- Interactive world map with earthquake locations
+- Summary statistics for earthquake events
+- Interactive world map
 - Magnitude distribution chart
 - Daily earthquake activity chart
-- Filters for time period and minimum magnitude
-- Earthquake records table with USGS event links
-- Download earthquake data as CSV
-- Project documentation available within the dashboard
+- Filters for the last 7, 14, and 30 days
+- Minimum magnitude filter
+- Earthquake records table with USGS links
+- CSV data download
+- Embedded project documentation
 
-## 🛠️ Technologies Used
+## 🛠️ Technologies
 
-- Python
-- Streamlit
-- Requests
-- Pandas
-- Plotly
-- PyDeck
-- USGS Earthquake API
+Python, Streamlit, Requests, Pandas, Plotly, PyDeck and USGS Earthquake API.
 
 ## 🚀 Run Locally
 
-1. Clone this repository.
-2. Open the project folder in your terminal.
-3. Install the required libraries:
+Install the dependencies:
 
-   ```bash
-   pip install -r requirements.txt
-   ```
+```bash
+pip install -r requirements.txt
+```
 
-4. Run the dashboard:
+Run the application:
 
-   ```bash
-   streamlit run app.py
-   ```
+```bash
+streamlit run app.py
+```
+
+## 📄 Project Documentation
+
+The one-page project documentation is included in [`earthquake_documentation.pdf`](earthquake_documentation.pdf).
 
 ## 📊 Data Source
 
-USGS Earthquake Hazards Program:
-https://earthquake.usgs.gov/fdsnws/event/1/
+[USGS Earthquake API](https://earthquake.usgs.gov/fdsnws/event/1/)
 
 ## 👨‍💻 Author
 
 G. Jeswanth
-
-## 📄 Documentation
-
-See `earthquake_documentation.pdf` for the project objective, methodology, verification, and limitations.
